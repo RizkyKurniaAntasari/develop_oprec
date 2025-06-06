@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../../db.php';
+require_once '../../db.php';
 
 $npm = $_POST['npm'];
 $password = $_POST['password'];

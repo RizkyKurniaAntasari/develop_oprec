@@ -3,7 +3,7 @@
 CREATE TABLE asdos(
     npm INT PRIMARY KEY,
     nama VARCHAR(250),
-    password VARCHAR(250)
+    password VARCHAR(1000)
 );
 
 CREATE TABLE pendaftaran(
@@ -21,3 +21,15 @@ CREATE TABLE pendaftaran(
     -- Menambahkan relasi ke tabel asdos
     FOREIGN KEY (npm) REFERENCES asdos(npm)
 );
+
+CREATE TABLE jadwal_wawancara (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  hari INT NOT NULL,
+  jam VARCHAR(20) NOT NULL,
+  waktu_text VARCHAR(20) NULL,
+  npm VARCHAR(20) DEFAULT NULL,
+  nama VARCHAR(100) DEFAULT NULL,
+  keterangan VARCHAR(20) DEFAULT NULL,
+  UNIQUE (hari, jam)
+);
+
