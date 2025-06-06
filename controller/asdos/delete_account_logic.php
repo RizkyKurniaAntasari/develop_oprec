@@ -13,7 +13,7 @@ $sql = "DELETE FROM asdos WHERE npm = '$npm'";
 if (mysqli_query($conn, $sql)) {
     echo "Akun berhasil dihapus.";
     session_destroy();
-    header("Location: /teori/oprec/index.php");
+    header("Location: " . BASE_URL . "/index.php");
     exit();
 } else {
     echo "Gagal menghapus akun: " . mysqli_error($conn);

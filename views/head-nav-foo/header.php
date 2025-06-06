@@ -39,12 +39,12 @@ if (isset($_SESSION['user'])) {
             <a href="https://x.com/himakomunila" target="_blank" title="X"><i class="fab fa-x-twitter"></i></a>
             <a href="https://www.tiktok.com/@himakomunila" target="_blank" title="TikTok"><i class="fab fa-tiktok mr-5"></i></a>
             
-            <!-- <?php 
-            // echo "<pre>"; // debugging
-            // print_r($_SESSION);
-            // echo "</pre>";
+            <?php 
+            echo "<pre>"; // debugging
+            print_r($_SESSION);
+            echo "</pre>";
             ?>
-             -->
+            
             <!-- Avatar User -->
             <?php if (!empty($nama)): ?>
                 <div class="relative group">

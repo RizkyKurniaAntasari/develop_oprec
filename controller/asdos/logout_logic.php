@@ -4,5 +4,5 @@ session_unset();  // menghapus semua variabel session
 session_destroy(); // menghancurkan session
 
 // Redirect ke index.php setelah logout
-header("Location: /teori/bansus/index.php");
+header("Location: " . BASE_URL . "/index.php");
 exit;

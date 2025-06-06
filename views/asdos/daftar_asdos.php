@@ -31,7 +31,7 @@ if (isset($_SESSION['user'])) {
 <body class="bg-gray-100">
     <section class="p-8 max-w-4xl mx-auto bg-white shadow-md rounded-md mb-10 mt-8">
         <h2 class="text-center text-3xl font-bold text-black mb-10  ">Form Pendaftaran Asisten Dosen</h2>
-        <form action="#" method="POST" enctype="multipart/form-data" class="space-y-5" autocomplete="off">
+        <form action="../../controller/asdos/daftar_asdos_logic.php" method="POST" enctype="multipart/form-data" class="space-y-5" autocomplete="off">
 
             <!-- Nama Lengkap -->
             <div>
@@ -125,12 +125,12 @@ if (isset($_SESSION['user'])) {
             <!-- Upload Surat Pernyataan -->
             <div>
                 <label class="block font-bold mb-1">Upload Surat Pernyataan<a class="text-underline underline underline-offset-4 text-blue-600" href="https://docs.google.com/document/d/13sA5RUgaHtU7RrfY6cQAReyO4-tckxa7/edit?usp=sharing&ouid=109242753190899151626&rtpof=true&sd=true" target="_blank">(Unduh disini)</a></label>
-                <input type="file" name="cv" accept=".pdf,.doc,.docx" class="w-full border border-gray-400 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#ffcc00]">
+                <input type="file" name="file" accept=".pdf,.doc,.docx" class="w-full border border-gray-400 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#ffcc00]">
             </div>
 
             <!-- Tombol Submit -->
             <div class="text-right">
-                <button type="submit" class="bg-[#ffcc00] hover:bg-[#ffcc00] text-black font-bold py-2 px-6 rounded shadow">Kirim</button>
+                <button type="submit" name="simpan" class="bg-[#ffcc00] hover:bg-[#ffcc00] text-black font-bold py-2 px-6 rounded shadow">Kirim</button>
             </div>
 
         </form>
