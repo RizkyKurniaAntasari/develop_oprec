@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $password = "";
-$db = "oprec";
+$db = "a_devops";
 
 $conn = mysqli_connect($host,$user,$password,$db);
 
