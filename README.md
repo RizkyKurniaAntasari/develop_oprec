@@ -1,2 +1,1 @@
-# develop_oprec
-untuk ngembangin web teori
+# Buat Ngembangin WEB Oprec-Pribadi
