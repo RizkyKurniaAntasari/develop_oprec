@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 // Simulasi user login
 $_SESSION['npm'] = '2317051097';
 $_SESSION['nama'] = 'Lekok Indah Lia';
@@ -8,6 +6,7 @@ $_SESSION['nama'] = 'Lekok Indah Lia';
 $currentPage = basename($_SERVER['PHP_SELF']);
 require_once '../head-nav-foo/header.php';
 require_once '../head-nav-foo/navbar.php';
+require_once '../../db.php';
 ?>
 
 <!DOCTYPE html>

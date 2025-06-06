@@ -1,0 +1,20 @@
+<?php
+session_start();
+require_once '../../db.php';
+
+$npm = $_SESSION['user'];
+
+if (!$conn) {
+    die("Koneksi gagal: " . mysqli_connect_error());
+}
+
+$sql = "DELETE FROM asdos WHERE npm = '$npm'";
+
+if (mysqli_query($conn, $sql)) {
+    echo "Akun berhasil dihapus.";
+    session_destroy();
+    header("Location: /teori/oprec/index.php");
+    exit();
+} else {
+    echo "Gagal menghapus akun: " . mysqli_error($conn);
+}
